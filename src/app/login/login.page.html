@@ -2,7 +2,7 @@
 </ion-header>
 
 <ion-content padding>
-  <form #form="ngForm">
+  <form [formGroup]="loginForm" (ngSubmit)="logForm()">
     <ion-grid>
       <ion-row  justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
@@ -14,14 +14,14 @@
           </div>
           <div padding class="fields">
             <ion-item>
-              <ion-input name="username" type="username" placeholder="Nome de Utilizador" ngModel required></ion-input>
+              <ion-input formControlName="username" type="username" placeholder="Nome de Utilizador" required></ion-input>
             </ion-item>
             <ion-item>
-              <ion-input name="password" type="password" placeholder="Palavra Chave" ngModel required></ion-input>
+              <ion-input formControlName="password" type="password" placeholder="Palavra Chave" required></ion-input>
             </ion-item>
           </div>
           <div padding>
-            <ion-button class="button" size="large" type="submit" expand="block" color="main" routerLink="/tabs/tab4" routerDirection="forward">Entrar</ion-button>
+            <ion-button class="button" size="large" type="submit" expand="block" color="main" [disabled]="!loginForm.valid" routerLink="/tabs/tab4" routerDirection="forward">Entrar</ion-button>
           </div>
           <div class="ion-text-center">   
             <p class="registar" routerLink="/registar" routerDirection="forward">Não tem conta? Registe-se aqui!</p>
