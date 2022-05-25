@@ -1,0 +1,7 @@
+{
+  "name": "liber",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,42 @@
+<ion-header>
+</ion-header>
+
+<ion-content padding>
+  <form #form="ngForm">
+    <ion-grid>
+      <ion-row  justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div>
+            <ion-img class="logo" src="/assets/images/liber.png"></ion-img>
+          </div>
+          <div class="ion-text-center">
+            <h3 class="title">Registar</h3>
+          </div>
+          <div padding class="fields">
+            <ion-item>
+              <ion-input name="username" type="username" placeholder="Nome de Utilizador" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="password" type="password" placeholder="Palavra Chave" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="email" type="email" placeholder="Email" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="address" type="address" placeholder="Morada" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="phone" type="phone" placeholder="Telemovel" ngModel required></ion-input>
+            </ion-item>
+          </div>
+          <div padding>
+            <ion-button class="button" size="large" type="submit" expand="block" color="main" routerLink="/login" routerDirection="forward">Registar</ion-button>
+          </div>
+          <div padding class="ion-text-center">
+            <ion-button class="backButton" size="small" type="submit" color="main" routerLink="/login" routerDirection="back">Voltar</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
