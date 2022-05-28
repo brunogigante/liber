@@ -17,7 +17,7 @@
   </div>
 
   <ion-list>
-    <ion-item *ngFor="let book of dataBooks | keyvalue" class="ion-margin">
+    <ion-item *ngFor="let book of dataBooks | keyvalue" class="ion-margin" routerLink="/publicacao" routerDirection="forward">
       <ion-avatar slot="start" class="avatar">
         <img [src]="book.value.img"/>
       </ion-avatar>
