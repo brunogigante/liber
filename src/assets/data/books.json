@@ -1,0 +1,74 @@
+{
+    "In Search of Lost Time": {
+      "id": "1",
+      "title": "In Search of Lost Time",
+      "author": "Marcel Proust",
+      "rating": "5",
+      "postAuthor": "Joel Antunes",
+      "opinion": "Livro incrivel, adorei muito",
+      "img": "assets/images/book1.jpg"
+    },
+    "Ulysses": {
+        "id": "2",
+        "title": "Ulysses",
+        "author": "James Joyce",
+        "rating": "4",
+        "postAuthor": "Rita Martins",
+      "opinion": "Recomendo vivamente",
+        "img": "assets/images/book2.jpg"
+      },
+      "Don Quixote": {
+        "id": "3",
+        "title": "Don Quixote",
+        "author": "Miguel de Cervantes",
+        "rating": "4.5",
+        "postAuthor": "Alfredo Gomes",
+        "opinion": "Foi um sucesso aqui em casa! Recomendo",
+        "img": "assets/images/book3.jpg"
+      },
+      "One Hundred Years of Solitude": {
+        "id": "4",
+        "title": "One Hundred Years of Solitude",
+        "author": "Gabriel Garcia Marquez",
+        "rating": "4",
+        "postAuthor": "Joana Garcia",
+        "opinion": "Gostei muito",
+        "img": "assets/images/book4.jpg"
+      },
+      "The Great Gatsby": {
+        "id": "5",
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "rating": "3",
+        "postAuthor": "Marco Josefino",
+        "opinion": "Vou voltar a ler pois adorei muito",
+        "img": "assets/images/book5.jpg"
+      },
+      "Moby Dick": {
+        "id": "6",
+        "title": "Moby Dick",
+        "author": "Herman Melville",
+        "rating": "5",
+        "postAuthor": "Miguel Esteves",
+        "opinion": "Não recomendo nem ao maior inimigo",
+        "img": "assets/images/book6.jpg"
+      },
+      "War and Peace": {
+        "id": "7",
+        "title": "War and Peace",
+        "author": "Leo Tolstoy",
+        "rating": "3",
+        "postAuthor": "Bruno Gigante",
+        "opinion": "Livro incrivel",
+        "img": "assets/images/book7.jpg"
+      },
+      "Hamlet": {
+        "id": "8",
+        "title": "Hamlet",
+        "author": "William Shakespeare",
+        "rating": "4",
+        "postAuthor": "João Martinho",
+        "opinion": "Livro horrível, não recomendo",
+        "img": "assets/images/book8.jpg"
+      }
+  }

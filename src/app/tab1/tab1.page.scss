@@ -1,7 +1,7 @@
-/* .item{    
+/* .item{
     border: 2px solid rgb(107, 107, 107);
     margin:2%;
-    border-radius: 10px;        
+    border-radius: 10px;
 } */
 .item{
     box-shadow: 2px 2px 8px #878787;
@@ -10,8 +10,12 @@
 }
 .avatar{
     --border-radius:0px;
+    width: 60px;
+    height: auto;
 }
-
 .stars{
     color: #dec105;
+}
+.iconUser{
+  color: black;
 }
