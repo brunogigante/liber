@@ -10,29 +10,24 @@
 <ion-content>
   <div class="body">
     <div class="body2">
-      <ion-item>
+      <ion-item *ngIf="bookInfo">
         <ion-avatar slot="start" class="avatar2">
-          <img class="avatar" src="/assets/images/book1.jpg"/>
+          <img class="avatar" [src]="bookInfo.img"/>
         </ion-avatar>
         <ion-label>
-          <h2>Viagens de Gulliver</h2>
-          <h3>João Martinho</h3>
-          <div class="stars">
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
+          <h2>{{ bookInfo.title}}</h2>
+          <h3>{{ bookInfo.author}}</h3>
+          <div>
+            <p> {{ bookInfo.rating }}<ion-icon  class="stars" name="star"></ion-icon></p>
           </div>
           <p>
             <ion-icon class="iconUser" name="person"></ion-icon>
-            Bruno Gigante
+            {{ bookInfo.postAuthor }}
           </p>
         </ion-label>
       </ion-item>
       <hr class="line">
-      <p class="opinion">"Por exemplo, pode adicionar uma folha de rosto, um cabeçalho e uma barra lateral que combinam
-        entre si. Clique em Inserir e escolha os elementos que quiser das diferentes galerias."</p>
+      <p class="opinion">{{ bookInfo.opinion }}</p>
       <p class="titleComment">Comentários: <ion-icon class="addComment" name="add-outline"></ion-icon></p>
       <div class="divComment">
         <ion-row>
