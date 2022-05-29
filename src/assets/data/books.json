@@ -5,7 +5,9 @@
       "author": "Marcel Proust",
       "rating": "5",
       "postAuthor": "Joel Antunes",
+      "postDate": "12/05/2020",
       "opinion": "Livro incrivel, adorei muito",
+      "authorImg": "assets/images/user1.jpg",
       "img": "assets/images/book1.jpg"
     },
     "Ulysses": {
@@ -14,7 +16,9 @@
         "author": "James Joyce",
         "rating": "4",
         "postAuthor": "Rita Martins",
+        "postDate": "22/06/2019",
         "opinion": "Recomendo vivamente",
+        "authorImg": "assets/images/user2.jpg",
         "img": "assets/images/book2.jpg"
       },
       "Don Quixote": {
@@ -23,7 +27,9 @@
         "author": "Miguel de Cervantes",
         "rating": "4.5",
         "postAuthor": "Alfredo Gomes",
+        "postDate": "30/11/2021",
         "opinion": "Foi um sucesso aqui em casa! Recomendo",
+        "authorImg": "assets/images/user3.jpg",
         "img": "assets/images/book3.jpg"
       },
       "One Hundred Years of Solitude": {
@@ -32,7 +38,9 @@
         "author": "Gabriel Garcia Marquez",
         "rating": "4",
         "postAuthor": "Joana Garcia",
+        "postDate": "04/07/2018",
         "opinion": "Gostei muito",
+        "authorImg": "assets/images/user4.jpg",
         "img": "assets/images/book4.jpg"
       },
       "The Great Gatsby": {
@@ -41,7 +49,9 @@
         "author": "F. Scott Fitzgerald",
         "rating": "3",
         "postAuthor": "Marco Josefino",
+        "postDate": "20/09/2020",
         "opinion": "Vou voltar a ler pois adorei muito",
+        "authorImg": "assets/images/user5.jpg",
         "img": "assets/images/book5.jpg"
       },
       "Moby Dick": {
@@ -50,7 +60,9 @@
         "author": "Herman Melville",
         "rating": "5",
         "postAuthor": "Miguel Esteves",
+        "postDate": "16/08/2021",
         "opinion": "Não recomendo nem ao maior inimigo",
+        "authorImg": "assets/images/user6.jpg",
         "img": "assets/images/book6.jpg"
       },
       "War and Peace": {
@@ -59,7 +71,9 @@
         "author": "Leo Tolstoy",
         "rating": "3",
         "postAuthor": "Bruno Gigante",
+        "postDate": "01/01/2022",
         "opinion": "Livro incrivel",
+        "authorImg": "assets/images/user7.jpg",
         "img": "assets/images/book7.jpg"
       },
       "Hamlet": {
@@ -68,7 +82,9 @@
         "author": "William Shakespeare",
         "rating": "4",
         "postAuthor": "João Martinho",
+        "postDate": "25/12/2021",
         "opinion": "Livro horrível, não recomendo",
+        "authorImg": "assets/images/user8.jpg",
         "img": "assets/images/book8.jpg"
       }
   }
