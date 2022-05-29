@@ -1,31 +1,17 @@
 {
-  "1": {
-    "comments": [
-      {
-        "member": "Joaquina Silva",
-        "message": "Sim tem razão"
-      },
-      {
-        "member": "Humberto Delgado",
-        "message": "Que lindo"
-      },
-      {
-        "member": "Maria Orelhas",
-        "message": "Eu cá adorei muito"
-      }
-    ]
+  "comment1": {
+    "member": "Joaquina Silva",
+    "message": "Sim tem razão",
+    "date": "10-12-2020",
+    "image": "assets/images/user1.jpg",
+    "valueStars": "1.2"
   },
-  "2": {
-    "comments": [
-      {
-        "member": "Francisca Ribeiro",
-        "message": "A minha filha adorou"
-      },
-      {
-        "member": "Bruno Lopes",
-        "message": "Ofereci este livro ao meu neto"
-      }
-    ]
+  "comment2": {
+    "member": "Bruno Coelho",
+    "message": "Não tem razao",
+    "date": "11-12-2025",
+    "image": "assets/images/user2.jpg",
+    "valueStars": "4.7"
   }
 }
 

@@ -8,6 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class PublicacaoPage implements OnInit {
   public bookInfo: any;
+  public comments: any;
 
   constructor(private router: Router, private activeRoute: ActivatedRoute) {
     this.activeRoute.queryParams.subscribe(params => {
@@ -17,8 +18,12 @@ export class PublicacaoPage implements OnInit {
       }
     })
   }
-
-  ngOnInit() {
+  ngOnInit(): void {
+    fetch('./assets/data/comments.json')
+      .then(res => res.json())
+      .then(json => {
+        this.comments = json;
+      })
   }
 
 }
