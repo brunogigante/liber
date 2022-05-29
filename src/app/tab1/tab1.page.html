@@ -23,9 +23,9 @@
       </ion-avatar>
       <ion-label>
         <h2>{{ book.value.title }}</h2>
-        <h3>{{ book.value.author }}</h3>
-        <div>{{ book.value.rating }}<ion-icon class="stars" name="star"></ion-icon></div>
-        <p><ion-icon class="iconUser" name="person"></ion-icon> {{ book.value.postAuthor}}</p>
+        <h3>{{ book.value["author"] }}</h3>
+        <div>{{ book.value["rating"] }}<ion-icon class="stars" name="star"></ion-icon></div>
+        <p><ion-icon class="iconUser" name="person"></ion-icon> {{ book.value["postAuthor"]}}</p>
       </ion-label>
     </ion-item>
 
