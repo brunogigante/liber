@@ -7,44 +7,44 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Adicionar Publicação</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <div class="body">
-    <ion-row>
-      <ion-col size="4" class="formatCol formatCol1">
-        <img class="imgUpload" src="/assets/images/imageUpload2.jpg"/>
-        <div>
-          <ion-icon name="cloud-upload-outline" class="iconUpload"></ion-icon>
-        </div>
-      </ion-col>
-      <ion-col size="8" class="formatCol">
-        <p class="TitleInputs">Titulo:</p>
-        <ion-item class="input">
-          <ion-input placeholder="Titulo"></ion-input>
-        </ion-item>
-        <p class="TitleInputs">Autor:</p>
-        <ion-item class="input">
-          <ion-input placeholder="Autor"></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-    <p class="titleCom">Pequena Sinopse:</p>
-    <textarea placeholder="Sinopse" class="txtareaSinop" ></textarea>
-    <p class="titleCom">Opinião relativa ao livro:</p>
-    <textarea placeholder="Opinião" class="txtarea"></textarea>
-    <p class="titleCom">Avaliação:</p>
-    <div class="divStars">
-      <ion-icon name="star-outline" class="star"></ion-icon>
-      <ion-icon name="star-outline" class="star"></ion-icon>
-      <ion-icon name="star-outline" class="star"></ion-icon>
-      <ion-icon name="star-outline" class="star"></ion-icon>
-      <ion-icon name="star-outline" class="star"></ion-icon>
+  <form [formGroup]="addForm" (ngSubmit)="aForm()">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Adicionar Publicação</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <div class="body">
+      <ion-row>
+        <ion-col size="4" class="formatCol formatCol1">
+          <img class="imgUpload" src="/assets/images/imageUpload2.jpg"/>
+          <div>
+            <ion-icon name="cloud-upload-outline" class="iconUpload"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="8" class="formatCol">
+          <p class="TitleInputs">Titulo:</p>
+          <ion-item class="input">
+            <ion-input formControlName="title" type="tittle" placeholder="Titulo" required> </ion-input>
+          </ion-item>
+          <p class="TitleInputs">Autor:</p>
+          <ion-item class="input">
+            <ion-input formControlName="author" type="author" placeholder="Autor" required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <p class="titleCom">Pequena Sinopse:</p>
+      <textarea formControlName="opinion" type="opinion" placeholder="Opinião" class="txtarea " required></textarea>
+      <p class="titleCom">Avaliação:</p>
+      <div class="divStars">
+        <ion-icon name="star-outline" class="star"></ion-icon>
+        <ion-icon name="star-outline" class="star"></ion-icon>
+        <ion-icon name="star-outline" class="star"></ion-icon>
+        <ion-icon name="star-outline" class="star"></ion-icon>
+        <ion-icon name="star-outline" class="star"></ion-icon>
+      </div>
+      <div class="buttonPub">
+        <ion-button class="button" type="submit" color="main" [disabled]="!addForm.valid" routerLink="/tabs/tab1" routerDirection="forward">Publicar</ion-button>
+      </div>
     </div>
-    <div class="buttonPub">
-      <ion-button color="main">Publicar</ion-button>
-    </div>
-  </div>
+  </form>
 </ion-content>
