@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 
 @Component({
   selector: 'app-login',
@@ -10,11 +11,12 @@ export class LoginPage implements OnInit {
 
   loginForm : FormGroup;
 
-  constructor( private formBuilder: FormBuilder ) {
+  constructor( private formBuilder: FormBuilder, private orientacao: ScreenOrientation ) {
     this.loginForm = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', Validators.required],
     });
+    this.orientacao.lock(this.orientacao.ORIENTATIONS.PORTRAIT);
   }
   logForm(){
     console.log(this.loginForm.value)
