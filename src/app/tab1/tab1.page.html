@@ -13,7 +13,7 @@
     </ion-toolbar>
   </ion-header>
   <div>
-    <ion-searchbar showCancelButton="always"></ion-searchbar>
+    <ion-searchbar [(ngModel)]="searchTerm" showCancelButton="always" animated=""></ion-searchbar>
   </div>
   <ion-item>
     <ion-label>Filtros:</ion-label>
@@ -27,7 +27,7 @@
     </ion-select>
   </ion-item>
   <ion-list class="list">
-    <ion-item *ngFor="let book of dataBooks | keyvalue" class="ion-margin" (click)="seeBookDetail(book.value.title)">
+    <ion-item *ngFor="let book of dataBooks | keyvalue | filter:searchTerm" class="ion-margin" (click)="seeBookDetail(book.value.title)">
       <ion-avatar slot="start" class="avatar">
         <img [src]="book.value.img"/>
       </ion-avatar>

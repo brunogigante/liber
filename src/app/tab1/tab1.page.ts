@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NavigationExtras, Router} from "@angular/router";
+import {NavigationExtras, Router} from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -9,6 +9,7 @@ import {NavigationExtras, Router} from "@angular/router";
 export class Tab1Page implements OnInit{
 
   public dataBooks: any;
+  searchTerm: string;
 
   constructor(private router: Router) {}
 
@@ -17,16 +18,17 @@ export class Tab1Page implements OnInit{
       .then(res => res.json())
       .then(json => {
         this.dataBooks = json;
-      })
+      });
   }
 
-  public seeBookDetail (bookkey: string) {
+  public seeBookDetail(bookkey: string) {
     let bookInfo: NavigationExtras;
+    // eslint-disable-next-line prefer-const
     bookInfo = {
       state: {
         dadosBook: this.dataBooks[bookkey]
       }
-    }
+    };
     // Utilização de Extras State (novo desde o Angular 7.2)
     this.router.navigate(['publicacao'], bookInfo);
   }
