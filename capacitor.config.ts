@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'pt.ipvc.liber',
   appName: 'liber',
   webDir: 'www',
   bundledWebRuntime: false
