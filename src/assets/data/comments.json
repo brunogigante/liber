@@ -1,17 +1,31 @@
 {
   "comment1": {
     "member": "Joaquina Silva",
-    "message": "Sim tem razão",
+    "message": "Concordo, o senhor tem razão! Muita razão",
     "date": "10-12-2020",
     "image": "assets/images/user1.jpg",
     "valueStars": "1.2"
   },
   "comment2": {
     "member": "Bruno Coelho",
-    "message": "Não tem razao",
+    "message": "Não tem razão nenhuma! Releia o livro novamente e perceba a história por detrás",
     "date": "11-12-2025",
     "image": "assets/images/user2.jpg",
     "valueStars": "4.7"
+  },
+  "comment3": {
+    "member": "Josefino Inácio",
+    "message": "O livro não é mau, mas também não é bom, come-se",
+    "date": "01-02-1997",
+    "image": "assets/images/user6.jpg",
+    "valueStars": "0.1"
+  },
+  "comment4": {
+    "member": "Maria Gabriela",
+    "message": "Eu vejo um bocado mal as letras, mas o livro até pareceu bom",
+    "date": "01-12-1991",
+    "image": "assets/images/user5.jpg",
+    "valueStars": "5.0"
   }
 }
 
