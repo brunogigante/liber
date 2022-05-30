@@ -33,4 +33,17 @@ export class Tab1Page implements OnInit{
     this.router.navigate(['publicacao'], bookInfo);
   }
 
+  public bestBooks(){
+    console.log('Carreguei no filtro');
+    this.dataBooks.sort((a, b) =>
+       (a.rating) - (b.rating) // descendente
+    );
+  }
+
+  public sortBy(id: number){
+    if(id === 1){
+      this.bestBooks();
+    }
+  }
+
 }
