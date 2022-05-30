@@ -15,8 +15,18 @@
   <div>
     <ion-searchbar showCancelButton="always"></ion-searchbar>
   </div>
-
-  <ion-list>
+  <ion-item>
+    <ion-label>Filtros:</ion-label>
+    <ion-select value="1" cancelText="Cancelar" okText="Selecionar">
+      <ion-select-option value="1">Melhores Avaliações</ion-select-option>
+      <ion-select-option value="2">Piores Avaliações</ion-select-option>
+      <ion-select-option value="3">Recentes Publicações</ion-select-option>
+      <ion-select-option value="4">Antigas Publicações</ion-select-option>
+      <ion-select-option value="5">Organizar A~Z</ion-select-option>
+      <ion-select-option value="6">Organizar Z~A</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-list class="list">
     <ion-item *ngFor="let book of dataBooks | keyvalue" class="ion-margin" (click)="seeBookDetail(book.value.title)">
       <ion-avatar slot="start" class="avatar">
         <img [src]="book.value.img"/>
@@ -24,8 +34,12 @@
       <ion-label>
         <h2>{{ book.value.title }}</h2>
         <h3>{{ book.value["author"] }}</h3>
-        <div>{{ book.value["rating"] }}<ion-icon class="stars" name="star"></ion-icon></div>
-        <p><ion-icon class="iconUser" name="person"></ion-icon> {{ book.value["postAuthor"]}}</p>
+        <div>{{ book.value["rating"] }}
+          <ion-icon class="stars" name="star"></ion-icon>
+        </div>
+        <p>
+          <ion-icon class="iconUser" name="person"></ion-icon>
+          {{ book.value["postAuthor"]}}</p>
       </ion-label>
     </ion-item>
   </ion-list>
