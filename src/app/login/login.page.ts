@@ -9,7 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginPage implements OnInit {
 
-  loginForm : FormGroup;
+  loginForm: FormGroup;
 //constructor( private formBuilder: FormBuilder, private orientacao: ScreenOrientation ) {
   constructor( private formBuilder: FormBuilder) {
     this.loginForm = this.formBuilder.group({
@@ -19,7 +19,7 @@ export class LoginPage implements OnInit {
     //this.orientacao.lock(this.orientacao.ORIENTATIONS.PORTRAIT);
   }
   logForm(){
-    console.log(this.loginForm.value)
+    console.log(this.loginForm.value);
   }
 
   ngOnInit() {

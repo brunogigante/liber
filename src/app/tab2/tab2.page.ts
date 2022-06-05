@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class Tab2Page implements OnInit{
 
-  addForm : FormGroup;
+  addForm: FormGroup;
 
   constructor( private formBuilder: FormBuilder ) {
     this.addForm = this.formBuilder.group({
