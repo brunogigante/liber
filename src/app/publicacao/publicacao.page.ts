@@ -16,14 +16,14 @@ export class PublicacaoPage implements OnInit {
         this.bookInfo = this.router.getCurrentNavigation().extras.state.dadosBook;
         console.log(this.bookInfo);
       }
-    })
+    });
   }
   ngOnInit(): void {
     fetch('./assets/data/comments.json')
       .then(res => res.json())
       .then(json => {
         this.comments = json;
-      })
+      });
   }
 
 }

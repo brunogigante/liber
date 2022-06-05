@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="main">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title >Editar Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="body">
+    <ion-avatar class="avatar">
+      <img class="imgAvatar" src="/assets/images/marcelo.jpg"/>
+    </ion-avatar>
+    <p class="name">Marcelo Rebelo de Sousa <ion-icon class="edit" name="create-outline"></ion-icon></p>
+    <p class="info">44 Anos ● Porto <ion-icon class="edit" name="create-outline"></ion-icon></p>
+    <p class="bio">" Eu ando a 200 porque tenho carros à frente senão andava a 300. " <ion-icon class="edit" name="create-outline"></ion-icon></p>
+    <p class="titlePub"> <ion-icon name="cog-outline"></ion-icon>Definições</p>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h2>Notificações</h2>
+      </ion-label>
+      <ion-toggle color="main" slot="end" name="blueberry" checked></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h2>Conta Privada</h2>
+      </ion-label>
+      <ion-toggle color="main" slot="end" name="blueberry"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h2>Desativar Comentários</h2>
+      </ion-label>
+      <ion-toggle color="main" slot="end" name="blueberry"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h2>Cookies</h2>
+      </ion-label>
+      <ion-toggle color="main" slot="end" name="blueberry" checked></ion-toggle>
+    </ion-item>
+  </ion-list>
+  <ion-button class="buttonTermSessao" color="danger" type="submit" routerLink="/login" routerDirection="forward">Terminar Sessão</ion-button>
+  </div>
+</ion-content>

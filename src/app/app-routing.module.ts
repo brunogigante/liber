@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'publicacao',
     loadChildren: () => import('./publicacao/publicacao.module').then( m => m.PublicacaoPageModule)
   },
+  {
+    path: 'perfil-definicoes',
+    loadChildren: () => import('./perfil-definicoes/perfil-definicoes.module').then( m => m.PerfilDefinicoesPageModule)
+  },
 
 ];
 @NgModule({
