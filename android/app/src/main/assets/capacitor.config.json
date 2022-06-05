@@ -1,0 +1,6 @@
+{
+	"appId": "pt.ipvc.liber",
+	"appName": "liber",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
